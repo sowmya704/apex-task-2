@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form + To-Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task2 style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Contact Form -->
+    <div class="form-container">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="email" id="email" placeholder="Enter Email">
+            <input type="text" id="phone" placeholder="Enter 10 Digit Phone Number">
+            <textarea id="message" rows="4" placeholder="Enter Message"></textarea>
+            <button type="submit">Submit</button>
+            <p class="error" id="errorMsg"></p>
+        </form>
+    </div>
+
+    <!-- To-Do List -->
+    <div class="todo-container">
+        <h2>To-Do List</h2>
+        <div class="todo-input">
+            <input type="text" id="taskInput" placeholder="Enter Task">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+</div>
+
+<script src="task2 script.js"></script>
+</body>
+</html>
